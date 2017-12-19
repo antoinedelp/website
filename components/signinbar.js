@@ -1,4 +1,11 @@
 import React from "react";
+import FacebookLogin from 'react-facebook-login';
+
+
+const responseFacebook = (response) => {
+console.log(response);
+}
+
 
 class signinbar extends React.Component {
   render() {
@@ -29,13 +36,11 @@ class signinbar extends React.Component {
                   </li>
                   <li>
                     <div className="modal-instance">
-                      <a
-                        href="#"
-                        className="modal-trigger"
-                        data-modal-index={1}
-                      >
-                        Créer un compte
-                      </a>
+                      <FacebookLogin
+                        appId="527582624079253"
+                        autoLoad={true}
+                        fields="name,email,picture"
+                        callback={responseFacebook} />
                     </div>
                   </li>
                   <li>
