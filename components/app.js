@@ -19,7 +19,6 @@ class App extends React.Component {
             <div>
             <Signinbar/>
             <Navbar/>
-            <Leftpanel/>
             <Main/>
             <Footer />
             </div>

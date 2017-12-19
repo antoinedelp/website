@@ -76,6 +76,7 @@ class leftpanel extends React.Component {
           </div>
         </div>
       </div>
+
     );
   }
 }

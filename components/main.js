@@ -2,15 +2,16 @@ import React from "react";
 import Gmap from "./gmap";
 import Participants from "./participants";
 import Comments from "./comments";
+import Leftpanel from "./leftpanel";
 
 class main extends React.Component {
   render() {
     return (
       <div className="main-container">
-        <section className="bg--secondary space--sm">
-          <div className="container navbarcustommargin">
+      <section className="bg--secondary space--sm">
+        <div className="container">
             <div className="row">
-              <leftpanel />
+              <Leftpanel/>
               <div className="col-md-8">
                 <div className="boxed boxed--lg boxed--border">
                   <div className="row">
@@ -80,8 +81,9 @@ class main extends React.Component {
               </div>
             </div>
           </div>
-        </section>
-      </div>
+          </section>
+          </div>
+
     );
   }
 }
