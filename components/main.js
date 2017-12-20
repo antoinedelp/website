@@ -3,6 +3,7 @@ import Gmap from "./gmap";
 import Participants from "./participants";
 import Comments from "./comments";
 import Leftpanel from "./leftpanel";
+import ModalExample from "./modal";
 
 class main extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class main extends React.Component {
       <section className="bg--secondary space--sm">
         <div className="container">
             <div className="row">
+              <ModalExample/>
               <Leftpanel/>
               <div className="col-md-8">
                 <div className="boxed boxed--lg boxed--border">

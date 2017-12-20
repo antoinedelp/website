@@ -1,5 +1,6 @@
 import React from "react";
 import FacebookLogin from 'react-facebook-login';
+var ModalExample = require("./modal.js");
 
 
 const responseFacebook = (response) => {
@@ -40,7 +41,10 @@ class signinbar extends React.Component {
                         appId="527582624079253"
                         autoLoad={true}
                         fields="name,email,picture"
-                        callback={responseFacebook} />
+                        size="small"
+                        textButton="Connexion"
+                        callback={responseFacebook}
+                        icon="fa-facebook" />
                     </div>
                   </li>
                   <li>
