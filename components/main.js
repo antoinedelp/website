@@ -12,7 +12,6 @@ class main extends React.Component {
       <section className="bg--secondary space--sm">
         <div className="container">
             <div className="row">
-              <ModalExample/>
               <Leftpanel/>
               <div className="col-md-8">
                 <div className="boxed boxed--lg boxed--border">

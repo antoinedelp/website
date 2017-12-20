@@ -18229,7 +18229,6 @@ var main = function (_React$Component) {
             _react2.default.createElement(
               "div",
               { className: "row" },
-              _react2.default.createElement(_modal2.default, null),
               _react2.default.createElement(_leftpanel2.default, null),
               _react2.default.createElement(
                 "div",
