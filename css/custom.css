@@ -1,1 +1,42 @@
-/*! Place your custom styles here */
+.map {
+    height: 30vh;
+  }
+
+  .label {
+    background-color: #00cccc !important;
+    border-color: #00cccc !important;
+    font-size: 9px !important;
+    padding: 0px 7px 0px 7px !important;
+  }
+
+  hr {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;}
+
+    .navbar-fixed-top {
+        background-color: #f8f8f8;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        top: 0;
+        border-width: 0 0 1px;
+
+      }
+
+      #menu1 {
+        padding: 1.2em 0 !important;
+    }
+
+    menu1 {
+        margin-top: 20vh !important;
+
+   }
+
+   .containercustommargin {
+    margin-top: 11vh;
+
+}
+.videobg .container .background-image-holder {
+  opacity : 1!important ;
+}

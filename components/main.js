@@ -7,6 +7,9 @@ import ModalExample from "./modal";
 
 class main extends React.Component {
   render() {
+
+
+
     return (
       <div className="main-container">
       <section className="bg--secondary space--sm">

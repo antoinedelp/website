@@ -2495,13 +2495,13 @@ iframe {
 }
 .videobg .container,
 .videobg .background-image-holder {
-  opacity: 0;
+  opacity : 1 !important;
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
   -moz-transition: 0.3s linear;
 }
 .videobg .background-image-holder {
-  opacity: 0 !important;
+  opacity: 1 !important;
 }
 .videobg.video-active .container {
   opacity: 1;
