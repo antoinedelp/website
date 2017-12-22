@@ -1,39 +1,23 @@
-var React    = require('react');
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React from 'react'
+import { Button, Header, Icon, Modal } from 'semantic-ui-react'
+var Link       = ReactRouterDOM.Link;
 
-class ModalExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
 
-    this.toggle = this.toggle.bind(this);
-  }
+const ModalBasic = () => (
+  <Modal trigger={<Button>Se connecter</Button>} basic size='small' color="#00cccc">
+    <Header icon='sign in' content='Déjà inscrit ?' />
+    <Modal.Content>
+      <p>Cliquez ici pour vous connecter. En vous connectant, vous acceptez les conditions générales d'utilisations, le stockage de cookies vous concernant par Oui Sports, de recevoir notre newsletter et 1000 ans de bonheur.  </p>
+    </Modal.Content>
+    <Modal.Actions>
+      <Button inverted color='red' >
+        <Icon name='remove' /> Beurk
+      </Button>
+       <Link to="/sessionlist"><Button inverted color='green' >
+        <Icon name='checkmark' />  Cool
+       </Button></Link>
+    </Modal.Actions>
+  </Modal>
+)
 
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-          <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-          </ModalFooter>
-        </Modal>
-      </div>
-    );
-  }
-}
-
-export default ModalExample;
+export default ModalBasic;

@@ -1,4 +1,5 @@
 import React from "react";
+import Modal from "./modal"
 
 class navBarHome extends React.Component {
   render() {
@@ -6,8 +7,6 @@ class navBarHome extends React.Component {
       <div className="nav-container">
         <div
           className="via-1513091732315"
-          via="via-1513091732315"
-          vio="OuiRun Nav"
         >
           <div className="bar bar--sm visible-xs">
             <div className="container">
@@ -30,8 +29,7 @@ class navBarHome extends React.Component {
                 <div className="col-xs-9 col-sm-10 text-right">
                   <a
                     href="#"
-                    className="hamburger-toggle"
-                    data-toggle-class="#menu1;hidden-xs hidden-sm"
+                    className="hamburger-toggle #menu1;hidden-xs hidden-sm"
                   >
                     {" "}
                     <i className="icon icon--sm stack-interface stack-menu" />{" "}
@@ -146,6 +144,7 @@ class navBarHome extends React.Component {
                       {" "}
                       <span className="btn__text">télécharger l'app</span>{" "}
                     </a>
+                    <Modal/>
                     <a
                       className="btn btn--sm btn--primary type--uppercase"
                       href="#purchase-template"

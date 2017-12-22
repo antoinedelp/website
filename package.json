@@ -20,13 +20,16 @@
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^15.5.4",
+    "react-facebook-account-kit": "^0.1.0",
     "react-facebook-login": "^3.7.2",
     "react-google-maps": "^9.4.3",
+    "react-place": "^0.6.2",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-sticky-header": "^0.1.9",
     "reactstrap": "^4.8.0",
     "redux": "^3.7.2",
+    "semantic-ui-react": "^0.77.1",
     "webpack": "^3.10.0"
   },
   "scripts": {

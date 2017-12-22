@@ -15,11 +15,20 @@ import Home from "./home";
 import Homepage from "./homepage";
 import Session from "./session";
 import SessionList from "./sessionslist";
+import Test from "./test";
 
 class App extends React.Component {
   render(){
     return(
       <Homepage/>
+    )
+  }
+};
+
+class Test2 extends React.Component {
+  render(){
+    return(
+      <Test/>
     )
   }
 };
@@ -32,7 +41,7 @@ ReactDOM.render(
           <Route exact path="/logout" component={Home}/>
           <Route exact path="/session" component={Session}/>
           <Route exact path="/sessionlist" component={SessionList}/>
-
+          <Route exact path="/test" component={Test2}/>
       </div>
    </Router>,
 

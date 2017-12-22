@@ -40,3 +40,32 @@
 .videobg .container .background-image-holder {
   opacity : 1!important ;
 }
+
+.type--fine-print {
+  font-size: 0.85714286em;
+}
+
+.container {
+  max-width: 100%;
+}
+
+> footer {
+  background-color: #ff6633;
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    text-align: center;
+    transition: 200ms;
+    &:hover {
+      box-shadow: 0 0 2rem gray;
+    }
+}
+
+.footer {
+ background-color: #ff6633;
+   width: 100%;
+   padding: 1rem;
+   margin: .5rem 1rem;
+   text-align: center;
+   transition: 200ms;
+}

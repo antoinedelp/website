@@ -5,32 +5,24 @@ var Link       = ReactRouterDOM.Link;
 class footer extends React.Component {
   render() {
     return (
-      <footer className="text-center space--sm footer-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="heading-block">
-                <ul className="list-inline list--hover">
+      <footer>
+        <div className="footer">
+          <div>
+            <div>
+              <div>
+                <ul>
                   <li>
                     <Link to="/session"> Session Bois  </Link>
                   </li>
                   <li>
-                    {" "}
-                    <a href="#">
-                      <span>Locations</span>
-                    </a>{" "}
+                      <Link to="/sessionlist"> Toutes les sessions </Link>
+
                   </li>
                   <li>
-                    {" "}
-                    <a href="#">
-                      <span>Products</span>
-                    </a>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="#">
-                      <span>Work With Us</span>
-                    </a>{" "}
+
+                    <Link to="/test">
+                      Test Fetch</Link>
+
                   </li>
                 </ul>
               </div>
@@ -66,17 +58,6 @@ class footer extends React.Component {
                   </li>
                 </ul>
               </div>
-              <div>
-                {" "}
-                <span className="type--fine-print"> </span>{" "}
-                <img
-                  alt="Image"
-                  className="flag"
-                  src="img/Logo_0uiRun_orange_lettres blanches_1024x1024.png"
-                />{" "}
-              </div>
-              <div>
-                {" "}
                 <span className="type--fine-print">
                   © <span className="update-year">2017</span> Oui Sports SAS
                 </span>{" "}
@@ -89,7 +70,6 @@ class footer extends React.Component {
               </div>
             </div>
           </div>
-        </div>
       </footer>
     );
   }
